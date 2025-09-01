@@ -312,10 +312,10 @@ contract usingProvable {
 
         _;
     }
-    modifier coupon(string code){
-        provable = ProvableI(OAR.getAddress());
+    modifier coupon(string code){        provable = ProvableI(OAR.getAddress());
         _;
     }
+
 
     function provable_setNetwork(uint8 networkID) internal returns(bool){
       return provable_setNetwork();
